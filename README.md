@@ -5,7 +5,7 @@ A clean, responsive expense tracker application built with HTML, CSS, and JavaSc
 ![Status](https://img.shields.io/badge/Status-Functional-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue) ![GitHub stars](https://img.shields.io/github/stars/yourusername/expense-tracker?style=flat) ![GitHub forks](https://img.shields.io/github/forks/yourusername/expense-tracker?style=flat)
 
 ## ✨ Live Demo
-[[![Live Demo](https://img.shields.io/badge/Try_It_Here-Live_Demo-2E8B57?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourusername.github.io/expense-tracker) *(Replace with your live demo link)*](https://shamim-01.github.io/Personal-Finance-Expense-Tracker/)
+[[![Live Demo](https://img.shields.io/badge/Try_It_Here-Live_Demo-2E8B57?style=for-the-badge&logo=google-chrome&logoColor=white)]([https://yourusername.github.io/expense-tracker)](https://shamim-01.github.io/Personal-Finance-Expense-Tracker/) 
 
 ## 📸 Screenshots
 ![Dashboard Preview](https://via.placeholder.com/800x450/4a6fa5/ffffff?text=Expense+Tracker+Dashboard) *(Add your screenshot URL)*
@@ -49,3 +49,9 @@ A clean, responsive expense tracker application built with HTML, CSS, and JavaSc
 - **Google Fonts** - Typography
 
 ## 📁 Project Structure
+expense-tracker/
+│
+├── index.html # Main HTML file
+├── styles.css # All CSS styles
+├── script.js # JavaScript functionality
+├── README.md # This documentation file
