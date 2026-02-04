@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance & Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-wallet"></i> Personal Finance Tracker</h1>
+      <p class="subtitle">Track your income and expenses with ease</p>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <div class="dashboard-card">
+          <h2><i class="fas fa-chart-line"></i> Financial Dashboard</h2>
+          <div class="stats">
+            <div class="stat-item total-balance">
+              <h3>Total Balance</h3>
+              <p id="total-balance" class="amount">$0.00</p>
+            </div>
+            <div class="stat-item total-income">
+              <h3>Total Income</h3>
+              <p id="total-income" class="amount">$0.00</p>
+            </div>
+            <div class="stat-item total-expense">
+              <h3>Total Expense</h3>
+              <p id="total-expense" class="amount">$0.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-wrapper">
+        <section class="transaction-form">
+          <h2><i class="fas fa-plus-circle"></i> Add New Transaction</h2>
+          <form id="transaction-form">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <input type="text" id="description" placeholder="e.g., Grocery shopping, Salary" required>
+              <div class="error-message" id="description-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Amount ($)</label>
+              <input type="number" id="amount" step="0.01" placeholder="0.00" required>
+              <div class="error-message" id="amount-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="type">Transaction Type</label>
+              <div class="radio-group">
+                <label class="radio-label income-option">
+                  <input type="radio" name="type" value="income" checked>
+                  <span class="radio-custom"></span>
+                  <span>Income</span>
+                </label>
+                <label class="radio-label expense-option">
+                  <input type="radio" name="type" value="expense">
+                  <span class="radio-custom"></span>
+                  <span>Expense</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="salary">Salary</option>
+                <option value="freelance">Freelance</option>
+                <option value="investment">Investment</option>
+                <option value="food">Food & Dining</option>
+                <option value="shopping">Shopping</option>
+                <option value="transport">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="bills">Bills & Utilities</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-save"></i> Add Transaction
+            </button>
+            <button type="button" id="clear-all" class="btn-clear">
+              <i class="fas fa-trash-alt"></i> Clear All Transactions
+            </button>
+          </form>
+        </section>
+
+        <section class="transaction-history">
+          <h2><i class="fas fa-history"></i> Transaction History</h2>
+
+          <div class="filter-controls">
+            <div class="filter-group">
+              <label for="filter-type">Filter by Type:</label>
+              <select id="filter-type">
+                <option value="all">All Transactions</option>
+                <option value="income">Income Only</option>
+                <option value="expense">Expense Only</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-category">Filter by Category:</label>
+              <select id="filter-category">
+                <option value="all">All Categories</option>
+                <option value="salary">Salary</option>
+                <option value="freelance">Freelance</option>
+                <option value="investment">Investment</option>
+                <option value="food">Food & Dining</option>
+                <option value="shopping">Shopping</option>
+                <option value="transport">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="bills">Bills & Utilities</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="transaction-list" id="transaction-list">
+            <div class="empty-state">
+              <i class="fas fa-receipt"></i>
+              <p>No transactions yet. Add your first transaction above!</p>
+            </div>
+          </div>
+
+          <div class="summary">
+            <div class="summary-item">
+              <span>Transactions Count:</span>
+              <strong id="transaction-count">0</strong>
+            </div>
+            <div class="summary-item">
+              <span>Last 7 Days:</span>
+              <strong id="last-week-total">$0.00</strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Shamim Alam &copy; 2026| Skill Highlight: Math logic, DOM manipulation, Conditional rendering</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
