@@ -8,7 +8,7 @@ A clean, responsive expense tracker application built with HTML, CSS, and JavaSc
 (https://shamim-01.github.io/Personal-Finance-Expense-Tracker/) 
 
 ## 📸 Screenshots
-![Dashboard Preview](https://via.placeholder.com/800x450/4a6fa5/ffffff?text=Expense+Tracker+Dashboard) *(Add your screenshot URL)*
+![Dashboard Preview][(https://pic.png) *(Add your screenshot URL)*
 
 ## 🚀 Features
 
