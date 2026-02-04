@@ -2,13 +2,11 @@
 
 A clean, responsive expense tracker application built with HTML, CSS, and JavaScript that helps you manage your income and expenses effectively.
 
-![Status](https://img.shields.io/badge/Status-Functional-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue) ![GitHub stars](https://img.shields.io/github/stars/yourusername/expense-tracker?style=flat) ![GitHub forks](https://img.shields.io/github/forks/yourusername/expense-tracker?style=flat)
-
 ## ✨ Live Demo
 (https://shamim-01.github.io/Personal-Finance-Expense-Tracker/) 
 
 ## 📸 Screenshots
-![Dashboard Preview][(https://pic.png) *(Add your screenshot URL)*
+(https://pic.png) *(Add your screenshot URL)*
 
 ## 🚀 Features
 
